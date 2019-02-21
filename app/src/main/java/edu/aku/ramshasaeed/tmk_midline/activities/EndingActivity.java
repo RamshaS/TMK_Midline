@@ -23,7 +23,7 @@ public class EndingActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        bi = DataBindingUtil.setContentView(this,R.layout.activity_ending);
+        bi = DataBindingUtil.setContentView(this, R.layout.activity_ending);
         bi.setCallback(this);
 
 
@@ -61,7 +61,7 @@ public class EndingActivity extends Activity {
 
     }
 
-   public void endInterview() {
+    public void endInterview() {
 
         Toast.makeText(this, "Processing This Section", Toast.LENGTH_SHORT).show();
         if (formValidation()) {

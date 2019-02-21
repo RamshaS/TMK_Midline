@@ -3,6 +3,9 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="android:Theme.Material.Light.DarkActionBar">
         <!-- Customize your theme here. -->
+        <item name="android:spinnerStyle">@style/spinnerStyle</item>
+        <item name="android:spinnerItemStyle">@style/SpinnerItem</item>
+        <item name="android:spinnerDropDownItemStyle">@style/SpinnerDropDownItem</item>
     </style>
 
 
@@ -60,6 +63,20 @@
         <item name="android:layout_width">wrap_content</item>
         <item name="android:radius">2dp</item>
         <item name="android:elevation">5dp</item>
+    </style>
+    <style name="buttonswithicon" parent="android:Widget.Material.Light.Button">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minWidth">64dp</item>
+        <item name="android:minHeight">36dp</item>
+        <item name="android:paddingEnd">16dp</item>
+        <item name="android:paddingStart">12dp</item>
+        <item name="android:paddingTop">9dp</item>
+        <item name="android:paddingBottom">9dp</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:typeface">serif</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:radius">4dp</item>
+        <item name="android:elevation">2dp</item>
     </style>
 
    <!-- <style name="AppTheme1" parent="Theme.AppCompat.Light.DarkActionBar">
@@ -294,6 +311,13 @@
     <style name="SpinnerItem">
         <item name="android:textAppearance">@style/SpinnerItemText</item>
     </style>
+    <style name="frontLayer">
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_marginEnd">16dp</item>
+        <item name="android:layout_marginTop">52dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
 
     <style name="SpinnerItemText">
         <item name="android:textSize">24sp</item>
@@ -301,14 +325,21 @@
     </style>
 
     <style name="spinnerStyle">
-        <item name="android:background">#efefef</item>
+        <!--<item name="android:background">#efefef</item>-->
+        <item name="android:background">@drawable/spinner</item>
         <item name="android:clickable">true</item>
+        <item name="android:maxHeight">44dp</item>
+
     </style>
 
     <style name="SpinnerDropDownItem">
         <item name="android:textColor">@color/colorPrimary</item>
         <item name="android:background">#efefef</item>
-        <item name="android:padding">8dp</item>
+        <item name="android:paddingEnd">8dp</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:maxHeight">144dp</item>
     </style>
 
     <style name="ActionBarTheme" parent="android:Widget.ActionBar">
